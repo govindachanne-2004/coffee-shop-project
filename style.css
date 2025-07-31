@@ -12,6 +12,8 @@
     background-position: center;
     position: fixed;
     top: 0;
+    color: white;
+
     
 }
 .logo{
@@ -22,7 +24,7 @@
     padding: 50px 0;
     /* border: 1px solid white; */
     box-shadow: 2px 2px 8px rgba(255,255,255,0.2);
-    background-color: black;
+    /* background-color: black; */
     
 }
 .nav-logo {
@@ -39,10 +41,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    /* background-color: black; */
-    color: black;
-    gap: 80px;
-    
+    gap: 50px;
 }
 .navbar .Nav{
     display: flex;
@@ -51,6 +50,7 @@
     align-items: center;
     gap: 30px;
     list-style: none;
+
 }
 .navbar .Nav li a{
     font-size: 20px;
@@ -77,6 +77,24 @@
     border: 1px solid orange;
     transition: all 0.4s ease-in-out;
 }
+.navbar-nav{
+    gap: 50px;
+    color: white;
+}
+.nav-item:hover{
+    background-color: white;
+    border: 1px solid orange;
+    text-decoration: underline;
+    
+}
+.nav-item{
+    color: white !important;
+    /* background-color: white; */
+}
+.active{
+    color: white;
+}
+
 
 
 /* home section css */
@@ -166,6 +184,11 @@
     border: 1px solid orange;
     transition: all 0.4s ease-in-out;
 }
+@media(min-width:768){
+    .about-para{
+
+    }
+}
 
 /* menu section css */
 
@@ -249,6 +272,7 @@
     background-color: black;
     color: white;
     padding: 20px 0;
+    margin-bottom: 20px;
 
 }
 .product-heading h1{
@@ -256,7 +280,13 @@
     color: white;
     text-transform: uppercase;
     font-family: playfair;
-    margin-left: 400px;
+    /* margin-left: 400px; */
+}
+.product-heading{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
 }
 .product-heading span{
     color: orange;
@@ -265,11 +295,13 @@
     width: 350px;
     height: 350px;
     padding: 20px 0;
+  
 }
 .product-img img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+   
 }
 .product-detail span{
     border: 1px solid grey;
@@ -291,9 +323,22 @@
     padding: 10px;
     color: orange;
 }
+@media (min-width:768){
+    .product-img img{
+        width: 100px;
+        height: 100px;
+
+    }
+}
 
 
 /* Review section css */
+
+.review-section{
+}
+
+
+
 
 .review-heading h1{
     z-index: 1;
@@ -311,14 +356,10 @@
     color: orange;
 }
 
-.review-icon span{
-    color: white;
-}
-
 .review-detail{
-    border: 1px solid red;
+    border: 1px solid white;
     color: white;
-    padding: 10px;
+    padding: 20px;
 }
 .review-detail img{
      width: 100px;
@@ -332,12 +373,14 @@
     text-align: center;
     padding: 20px;
 }
-.star {
+.review-detail span{
     color: orange;
-    padding: 20px;
+}
+.review-star{
+    color: orange;
+    
 }
 
-    
 
 
 
@@ -390,11 +433,12 @@
     padding: 20px;
 }
 .contact-content input{
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     /* height: 50%; */
     width: 80%;
 }
 .cart{
+
     width: 100%;
     margin-bottom: 30px;
 }
@@ -422,10 +466,13 @@
     z-index: 1;
     text-transform: uppercase;
     
+    
 }
 .blog-section {
     margin-top: 100px;
     margin-bottom: 20px;
+    
+    
 }
 .blog-heading {
     justify-content: center;
@@ -441,6 +488,8 @@
     background-color: black;
     color: white;
     /* padding: 20px; */
+    margin-bottom: 20px;
+    
 }
 .blog-img img{
     width: 100%;
