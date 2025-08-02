@@ -13,26 +13,13 @@
     position: fixed;
     top: 0;
     color: white;
-    
-
-}
-.logo{
-    height: 50px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 0;
-    box-shadow: 2px 2px 8px rgba(255,255,255,0.2);
-    
-}
-.nav-logo {
-    height: 100px;
-    width: 100px;
+   
 }
 .nav-logo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    
 }
 .navbar {
     display: flex;
@@ -40,8 +27,8 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 50px;
-    position: absolute;
-    /* top: 100%; right: ; */
+    background-color: white;
+    position: static;
 }
 .navbar .Nav{
     display: flex;
@@ -50,6 +37,7 @@
     align-items: center;
     gap: 30px;
     list-style: none;
+    
 
 }
 .navbar .Nav li a{
@@ -70,6 +58,7 @@
     font-size: 20px;
     background-color: white;
     color: orange;
+    
 }
 .nav-button:hover{
      color: orange;
@@ -80,32 +69,33 @@
 .navbar-nav{
     gap: 50px;
     color: white;
+     /* background-color: aliceblue; */
+}
+.nav-link{
+    color: white !important;
+    /* background-color: white; */
 }
 .nav-item:hover{
-    background-color: white;
-    border: 1px solid orange;
+    background-color: orange;
+    /* border: 1px solid orange; */
     text-decoration: underline;
+    text-decoration: none;
     
 }
 .nav-item{
     color: white !important;
-    /* background-color: white; */
 }
 @media(max-width:991px){
     .navbar-toggler{
         position: inline-block; 
     }
-.header .navbar{
-        position: absolute;
-        background: 30rem;
-        width:30rem ;
-        height: calc(100vh);
+    .navbar-toggler:hover{
+        background-color: orange;
     }
+  
     .header .navbar a{
         color: var(--black);
         display: block;
-        margin: 1.5rem;
-        padding: .5rem;
 
     }
     .navbar-nav{
@@ -113,9 +103,7 @@
         color: white;
         /* background-color: black; */
     }
-    .nav-item{
-        color: white;
-    }
+ 
      form.form-inline{
         display: none;
     }
@@ -221,6 +209,11 @@
         margin-left: 100px;
     }
 }
+@media(max-width:991px){
+    .navbar-toggler{
+        position: inline-block; 
+    }
+}
 
 
 
@@ -316,7 +309,6 @@
     color: white;
     text-transform: uppercase;
     font-family: playfair;
-    /* margin-left: 400px; */
 }
 .product-heading{
     align-items: center;
@@ -364,7 +356,6 @@
         width: 200px;
         height: 20px;
         margin-right: 50px;
-        /* margin-left: 25px; */
 
     }
 }
@@ -372,7 +363,6 @@
     .product-img{
         width: 200px;
         height: 200px;
-        /* margin-right: 60px; */
         margin-left: 35px;
 
     }
@@ -381,7 +371,6 @@
     .product-img img{
         width: 200px;
         height: 200px;
-        /* margin-right: 60px; */
         margin-left: 50px;
 
     }
@@ -422,8 +411,7 @@
     margin-top: 30px;
     width: 100%;
     height: 100%;
-    /* margin-left: 220px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: black;
 }
 .contact-content h1{
@@ -515,6 +503,10 @@
     margin-bottom: 20px;
     
 }
+.blog-img{
+    width: 346px;
+    height: 300px;
+}
 .blog-img img{
     width: 100%;
     padding: 20px auto;
@@ -527,7 +519,7 @@
 }
 .blog-detail h3  {
     margin-left: 20px;
-    margin-top: 15px;
+    /* margin-top: 10px; */
 }
 .blog-detail h3:hover{
     color: orange;
